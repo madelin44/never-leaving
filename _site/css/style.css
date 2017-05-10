@@ -1,0 +1,213 @@
+/* ------ INDEX --------------------
+  - CSS RESET
+  - GENERAL HELPER CLASSES
+  - UNIVERSAL STYLES
+    - Layout
+    - Typography
+    - General Styles
+  - HEADER & FOOTER
+  - MODULAR ELEMENTS
+    - Element Name
+  - FORMS
+
+---------------------------
+Website Fonts: Josefin Sans, Arimo
+Website Colours: #1C1D21, #6B182A, #5C6D70, #A37774, #F0DCCA, #4cc2c6
+----------------------------
+*/
+
+/*/////////////////////////////////////////////// GENERAL STYLES ///////////////////////////////////////*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+img{
+  max-width: 100%
+  height:auto;
+}
+
+/* ---- GENERAL HELPER CLASSES --------------------------- */
+
+/* ---- GENERAL HELPER CLASSES --------------------------- */
+.tall         { min-height:100vh; }
+.med-height   { min-height: 50vh; }
+.short        { min-height: 30vh; }
+
+.left         { text-align: left; }
+.centered     { text-align: center; }
+.right        { text-align: right; }
+.no-margin    {margin:0}
+.no-padding { padding: 0; }
+
+.light-bg    { background-color: #F0DCCA; }
+.dark-bg     { background-color: #5C6D70; }
+.feat-bg     { background-color: #A37774; }
+
+body {
+  color: #5c6d70;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 24px;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family:'Montserrat', sans-serif;
+  font-weight: 300;
+  line-height: 1.7;
+  letter-spacing: 5px;
+  color: #4cc2c6;
+}
+
+h1{
+  font-size: 28px;
+  padding-bottom: 2%;
+  text-transform: uppercase;
+  letter-spacing: 9px;
+}
+
+h2{
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+h3{
+  font-size: 20px;
+}
+
+a, i, li, form{
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+p{
+  line-height: 1.7;
+}
+
+a{
+  text-decoration: none;
+  color: #6B182A
+}
+
+h1{
+  font-family: 'Arimo', sans-serif;
+  font-weight: 400;
+  font-size: 20;
+  line-height: 1.5;
+  text-align: center;
+}
+
+header{
+  padding: 1.5%;
+  min-height: 100vh;
+  margin-bottom: 0;
+}
+
+section {
+margin: 5% 8%;
+}
+
+/*/////////////////////////////////////////////// HEADER /////////////////////////////////////////////*/
+
+header{
+  background-image:url('../images/Reviews/Macalister_mansion/Macalister_banner_edit.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+div a{
+  padding: 10% 5%;
+  color: #F0DCCA;
+}
+
+header div.centered{
+  padding-bottom: 1%;
+  border-bottom: 2px solid #F0DCCA;
+  position: fixed;
+  width: 100%;
+}
+
+.logo{
+  width: 100%;
+  padding-top: 3%;
+}
+
+nav a{
+  line-height:2.0;
+}
+
+nav{
+  margin-top: 3%;
+}
+nav.col-4{
+  padding-top: 1%;
+}
+/*/////////////////////////////////////////////// BANNER SECTION /////////////////////////////////////////////
+.feature{
+  width:100%;
+}
+
+section.banner{
+  margin: auto 8%;
+}*/
+/*/////////////////////////////////////////////// FIRST IMPRESSIONS SECTION /////////////////////////////////////////////*/
+
+/* / /   / / / / / / /  / / / / /MAIN CONTENT / / / / / / / / / / / / / / */
+
+.main-content{
+  background-color: #EFE9E3;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+/*/////////////////////////////////////////////// DESIGN SECTION /////////////////////////////////////////////*/
+.col-12 h1{
+  border-bottom: 2px solid #F0DCCA;
+}
+
+.col-6 img{
+  width:100%;
+  height: auto;
+}
+
+.design h2{
+  padding-top: 5%;
+}
+
+h3 span{
+  font-weight: 700;
+}
+/*/////////////////////////////////////////////// COMFORT SECTION /////////////////////////////////////////////*/
+.comfort h2{
+  padding-top: 5%;
+  padding-left: 2%;
+}
+.comfort p{
+  padding-left: 2%;
+}
+
+.comfort h2{
+  padding-top: 5%;
+}
+
+/*/////////////////////////////////////////////// SERVICE SECTION /////////////////////////////////////////////*/
+.service h2{
+  padding-top: 5%;
+}
+
+/*/////////////////////////////////////////////// DINING SECTION /////////////////////////////////////////////*/
+.dining h2{
+  padding-top: 5%;
+  padding-left: 2%;
+}
+.dining p{
+  padding-left: 2%;
+}
+
+/*/////////////////////////////////////////////// SERVICE SECTION /////////////////////////////////////////////*/
+section.neighbourhood {
+  margin:auto 8%;
+}
+
+/*/////////////////////////////////////////////// FOOTER /////////////////////////////////////////////*/
