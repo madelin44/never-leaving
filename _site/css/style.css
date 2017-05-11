@@ -73,7 +73,8 @@ h2{
 }
 
 h3{
-  font-size: 20px;
+  font-size: 22px;
+  line-height: 2;
 }
 
 a, i, li, form{
@@ -103,6 +104,27 @@ header{
   padding: 1.5%;
   min-height: 100vh;
   margin-bottom: 0;
+}
+
+footer {
+  margin: 2% 8%;
+  padding: 5% 5%;
+  max-height: 20%;
+}
+
+.footer-box {
+    border-left: 2px solid #F0DCCA;
+    text-align: center;
+    margin: 5% auto;
+    padding: 5%;
+    }
+
+.footer-box.last {
+  border-right: 2px solid #F0DCCA;
+}
+
+.footer .copyright {
+  border-top: 2px double #f0dcca;
 }
 
 section {
@@ -210,4 +232,28 @@ section.neighbourhood {
   margin:auto 8%;
 }
 
+/*/////////////////////////////////////////////// SUMMARY SECTION /////////////////////////////////////////////*/
+.summary .col-6{
+  text-align: left;
+  line-height: 1.5;
+}
+
+.summary h3{
+  line-height: 2.0;
+  text-align: center;
+  font-weight:400;
+}
+/*/////////////////////////////////////////////// COMMENT FORM /////////////////////////////////////////////*/
+
+.comments form{
+  border: 2px solid #F0DCCA;
+  text-align: center;
+  padding: 5%;
+  margin: 2%;
+}
+
+
 /*/////////////////////////////////////////////// FOOTER /////////////////////////////////////////////*/
+footer a{
+  color: #1C1D21;
+}
