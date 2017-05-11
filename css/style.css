@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6{
   color: #4cc2c6;
 }
 
-h1{
+h1.centered{
   font-size: 28px;
   padding-bottom: 2%;
   text-transform: uppercase;
@@ -84,7 +84,8 @@ a, i, li, form{
 }
 
 p{
-  line-height: 1.7;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
 }
 
 a{
@@ -106,29 +107,15 @@ header{
   margin-bottom: 0;
 }
 
-footer {
-  margin: 2% 8%;
-  padding: 5% 5%;
-  max-height: 20%;
-}
+footer{
+  padding: 1.5%;
+  min-height: 40vh;
+  margin-bottom: 0;
+  background-color: #EFE9E3;
+  }
 
-.footer-box {
-    border-left: 2px solid #F0DCCA;
-    text-align: center;
-    margin: 5% auto;
-    padding: 5%;
-    }
-
-.footer-box.last {
-  border-right: 2px solid #F0DCCA;
-}
-
-.footer .copyright {
-  border-top: 2px double #f0dcca;
-}
-
-section {
-margin: 5% 8%;
+section{
+margin: 4% 8%;
 }
 
 /*/////////////////////////////////////////////// HEADER /////////////////////////////////////////////*/
@@ -139,10 +126,13 @@ header{
   background-repeat: no-repeat;
 }
 
+
+
 div a{
   padding: 10% 5%;
   color: #F0DCCA;
 }
+
 
 header div.centered{
   padding-bottom: 1%;
@@ -156,16 +146,16 @@ header div.centered{
   padding-top: 3%;
 }
 
-nav a{
-  line-height:2.0;
+nav{
+  padding-top: 3.5% !important;
 }
 
-nav{
-  margin-top: 3%;
+header nav a{
+  display:block;
+  padding: 1% 1%;
 }
-nav.col-4{
-  padding-top: 1%;
-}
+
+
 /*/////////////////////////////////////////////// BANNER SECTION /////////////////////////////////////////////
 .feature{
   width:100%;
@@ -177,20 +167,38 @@ section.banner{
 /*/////////////////////////////////////////////// FIRST IMPRESSIONS SECTION /////////////////////////////////////////////*/
 
 /* / /   / / / / / / /  / / / / /MAIN CONTENT / / / / / / / / / / / / / / */
+.grid-top.centered{
+  padding: 2% 8%;
+}
 
 .main-content{
   background-color: #EFE9E3;
   padding-top: 2%;
-  padding-bottom: 2%;
+  padding-right: 6%;
+  padding-left: 6%;
+  padding-bottom: 4%;
+  margin:0 8%;
 }
 /*/////////////////////////////////////////////// DESIGN SECTION /////////////////////////////////////////////*/
 .col-12 h1{
   border-bottom: 2px solid #F0DCCA;
 }
 
+.col-6 {
+  padding: 2% 1.5%;
+}
+
+.col-6 p{
+  padding-bottom: 2.5%;
+}
+
 .col-6 img{
   width:100%;
   height: auto;
+}
+
+.col-6-text{
+  padding-top: 3%;
 }
 
 .design h2{
@@ -200,37 +208,21 @@ section.banner{
 h3 span{
   font-weight: 700;
 }
-/*/////////////////////////////////////////////// COMFORT SECTION /////////////////////////////////////////////*/
-.comfort h2{
-  padding-top: 5%;
-  padding-left: 2%;
-}
-.comfort p{
-  padding-left: 2%;
-}
 
-.comfort h2{
-  padding-top: 5%;
+.hidden-one{
+  display:none;
 }
+/*/////////////////////////////////////////////// COMFORT SECTION /////////////////////////////////////////////*/
+
+
+
+
 
 /*/////////////////////////////////////////////// SERVICE SECTION /////////////////////////////////////////////*/
-.service h2{
-  padding-top: 5%;
-}
 
 /*/////////////////////////////////////////////// DINING SECTION /////////////////////////////////////////////*/
-.dining h2{
-  padding-top: 5%;
-  padding-left: 2%;
-}
-.dining p{
-  padding-left: 2%;
-}
 
 /*/////////////////////////////////////////////// SERVICE SECTION /////////////////////////////////////////////*/
-section.neighbourhood {
-  margin:auto 8%;
-}
 
 /*/////////////////////////////////////////////// SUMMARY SECTION /////////////////////////////////////////////*/
 .summary .col-6{
@@ -254,6 +246,24 @@ section.neighbourhood {
 
 
 /*/////////////////////////////////////////////// FOOTER /////////////////////////////////////////////*/
+.footer-box {
+    border-left: 1px solid #5c6d70;
+    text-align: center;
+    margin: 0;
+    padding: 5%;
+
+.footer-box
+  border-right: 1px solid #5c6d70;
+}
+
+.footer .copyright {
+  border-top: 1px double #5c6d70;
+}
+
+.footer div.col-12{
+
+}
+
 footer a{
   color: #1C1D21;
 }
