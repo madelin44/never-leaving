@@ -10,16 +10,17 @@ layout: default
 <h4>{{page.intro}}
 </h4>
 </section>
-{% include content-text-image.html text=page.section-1.text image=page.section-1.image %}
-
-{% include content-text-quote.html text=page.section-2.text quote=page.section-2.quote %}
-
-{% include content-text-text.html text-left=page.section-3.text-left subhead-left=page.section-3.subhead-left text-right=page.section-3.text-right subhead-right=page.section-3.subhead-right %}
-
-{% include content-text-image.html subhead=page.section-4.subhead text=page.section-4.text image=page.section-4.image %}
-
-{% include content-text-space.html subhead=page.section-5.subhead text=page.section-5.text %}
-
+{% for block in page.blocks %}
+{% if block.type == "text-image" %}
+{% include content-text-image.html text=block.text image=block.image %}
+{% elsif block.type == "text-quote" %}
+{% include content-text-quote.html text=block.text quote=block.quote %}
+{% elsif block.type == "text-text" %}
+{% include content-text-text.html text-left=block.text-left subhead-left=block.subhead-left text-right=block.text-right subhead-right=block.subhead-right %}
+{% elsif block.type == "text-space" %}
+{% include content-text-space.html subhead=block.subhead text=block.text %}
+{% endif %}
+{% endfor %}
   <section class="comments">
     <div class="grid">
       <div class="col-4">
