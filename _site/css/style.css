@@ -146,9 +146,8 @@ margin: 4% 8%;
 /*/////////////////////////////////////////////// HEADER /////////////////////////////////////////////*/
 
 header{
-  background-image:url('../images/Reviews/Macalister_mansion/Macalister_banner_edit.jpg');
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
