@@ -1,0 +1,14 @@
+<section class="text-quote article-padding">
+  <div class="grid">
+    <div class="col-6">
+      {% if include.subhead !=blank %}
+      <h4>{{ include.subhead}}</h4>
+      {% endif %}
+      <p>{{ include.text}} is this working
+        </p>
+    </div>
+    <div class="col-6 pull-quote">
+      <h5>{{include.quote}}</h5>
+    </div>
+  </div>
+</section>

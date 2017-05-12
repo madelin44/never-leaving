@@ -89,7 +89,7 @@ h5 {
 a, i, li, form{
   font-family: 'Josefin Sans', sans-serif;
   line-height: 1.5;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 ul{
@@ -143,14 +143,15 @@ margin: 4% 8%;
   padding: 0 2%;
 }
 
+.col-8 img{
+  margin-bottom: 4%;
+}
 /*/////////////////////////////////////////////// HEADER /////////////////////////////////////////////*/
 
 header{
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-
 
 div a{
   padding: 10% 5%;
@@ -167,11 +168,11 @@ header div.centered{
 
 .logo{
   width: 100%;
-  padding-top: 3%;
+  padding-top: 4%;
 }
 
 nav{
-  padding-top: 3.5% !important;
+  padding-top: 4% !important;
 }
 
 header nav a{
@@ -229,6 +230,15 @@ section.banner{
   padding-top: 3%;
 }
 
+.photo-text{
+  padding: 3% 3%;
+}
+
+.photo-text h2{
+  text-align: center;
+}
+
+
 .design h2{
   padding-top: 5%;
 }
@@ -263,6 +273,9 @@ h3 span{
   text-align: center;
   font-weight:400;
 }
+
+/* /////// Gallery ///////// */
+
 /*/////////////////////////////////////////////// COMMENT FORM /////////////////////////////////////////////*/
 
 .comments form{

@@ -11,51 +11,15 @@ layout: default
 </h4>
 </section>
 {% include content-text-image.html text=page.section-1.text image=page.section-1.image %}
-<section class="text-quote article-padding">
-  <div class="grid">
-    <div class="col-6">
-      {% if page.section-2.subhead !=blank %}
-      <h4>{{ page.section-2.subhead}}</h4>
-      {% endif %}
-      <p>{{page.section-2.text}}
-        </p>
-    </div>
-    <div class="col-6 pull-quote">
-      <h5>{{page.section-2.quote}}</h5>
-    </div>
-  </div>
-</section>
-<section class="text-text article-padding">
-  <div class="grid">
-    <div class="col-6">
-      {% if page.section-3.subhead-left !=blank %}
-      <h4>{{ page.section-3.subhead-left}}</h4>
-      {% endif %}
-      <p>{{page.section-3.text-left}}
-      </p>
-    </div>
-    <div class="col-6">
-      {% if page.section-3.subhead-right !=blank %}
-      <h4>{{ page.section-3.subhead-right}}</h4>
-      {% endif %}
-      <p>{{page.section-3.text-right}}
-      </p>
-    </div>
-  </div>
-</section>
-{% include content-text-image.html text=page.section-4.text image=page.section-4.image %}
-<section class="text-text article-padding">
-  <div class="grid">
-    <div class="col-6">
-      <h4>The Beauty of the South</h4>
-      <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </div>
-    <div class="col-6">
-    </div>
-  </div>
-</section>
+
+{% include content-text-quote.html text=page.section-2.text quote=page.section-2.quote %}
+
+{% include content-text-text.html text-left=page.section-3.text-left subhead-left=page.section-3.subhead-left text-right=page.section-3.text-right subhead-right=page.section-3.subhead-right %}
+
+{% include content-text-image.html subhead=page.section-4.subhead text=page.section-4.text image=page.section-4.image %}
+
+{% include content-text-space.html subhead=page.section-5.subhead text=page.section-5.text %}
+
   <section class="comments">
     <div class="grid">
       <div class="col-4">
