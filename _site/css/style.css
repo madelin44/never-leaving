@@ -89,7 +89,7 @@ h5 {
 a, i, li, form{
   font-family: 'Josefin Sans', sans-serif;
   line-height: 1.5;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 ul{
@@ -103,9 +103,10 @@ p{
 
 a{
   text-decoration: none;
-  color: #6B182A
+  color: #4cc2c6;
 }
 
+.
 h1{
   font-family: 'Arimo', sans-serif;
   font-weight: 400;
@@ -153,9 +154,10 @@ header{
   background-size: cover;
 }
 
-div a{
+header div a{
   padding: 10% 5%;
   color: #F0DCCA;
+  font-size: 18px;
 }
 
 
@@ -178,6 +180,8 @@ nav{
 header nav a{
   display:block;
   padding: 1% 1%;
+  color: #F0DCCA;
+  font-size: 18px;
 }
 
 
@@ -235,7 +239,12 @@ section.banner{
   background-color: white;
   margin-bottom: 4%;
   padding: 5% 5% 3% 5%;
-  text-align: center;
+  text-align: left;
+}
+
+.photo-link {
+  text-align: right;
+  font-weight: bold;
 }
 
 .col-6-text p{
