@@ -1,0 +1,10 @@
+collections:
+  reviews:
+    output: true
+    permalink: /reviews/:path
+  articles:
+    output: true
+    permalink: /articles/:path
+  photo-stories:
+    output: true
+    permalink: /photo-stories/:path

@@ -1,23 +1,27 @@
 ---
 layout: default
+header-image: /images/DSC_0613.jpg
 ---
 <section>
-  <h1>{{page.title}}
+  <h1>Editorial
   </h1>
 </section>
-
-<section>
-<h4>{{page.intro}}
-</h4>
+{% for article in site.articles %}
 </section>
-{% for block in page.blocks %}
-{% if block.type == "text-image" %}
-{% include content-text-image.html subhead=block.subhead text=block.text image=block.image %}
-{% elsif block.type == "text-quote" %}
-{% include content-text-quote.html subhead=block.subhead text=block.text quote=block.quote %}
-{% elsif block.type == "text-text" %}
-{% include content-text-text.html text-left=block.text-left subhead-left=block.subhead-left text-right=block.text-right subhead-right=block.subhead-right %}
-{% elsif block.type == "text-space" %}
-{% include content-text-space.html subhead=block.subhead text=block.text %}
-{% endif %}
+<section class="main-content gallery">
+  <div class="grid-section-one">
+    <div class="col-6 landscape photo">
+      <img src="{{ article.header-image }}"/>
+    </div>
+    <div class="col-6">
+      <div class="column-text">
+        <h2>{{ article.title }}</h2>
+        <p>{{ article.intro }}</p>
+        <div class="photo-link">
+          <a href="{{ article.url }}">Read it</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 {% endfor %}

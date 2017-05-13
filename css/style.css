@@ -52,7 +52,7 @@ body {
   font-size: 20px;
 }
 
-h1, h2, h3, h4, h5, h6{
+h2, h3, h4, h5, h6{
   font-family:'Montserrat', sans-serif;
   font-weight: 300;
   line-height: 1.7;
@@ -60,11 +60,16 @@ h1, h2, h3, h4, h5, h6{
   color: #4cc2c6;
 }
 
-h1.centered{
+h1{
+  font-family:'Montserrat', sans-serif;
+  font-weight: 300;
   font-size: 28px;
   padding-bottom: 2%;
   text-transform: uppercase;
   letter-spacing: 9px;
+  text-align: center;
+  color: #4cc2c6;
+
 }
 
 h2{
@@ -202,9 +207,9 @@ section.banner{
 
 .main-content{
   background-color: #EFE9E3;
-  padding-top: 2%;
-  padding-right: 6%;
-  padding-left: 6%;
+  padding-top: 4%;
+  padding-right: 4%;
+  padding-left: 4%;
   padding-bottom: 4%;
   margin:0 8%;
 }
@@ -239,6 +244,11 @@ section.banner{
   background-color: white;
   margin-bottom: 4%;
   padding: 5% 5% 3% 5%;
+  text-align: left;
+}
+
+.column-text-review, .column-image-review{
+  margin-bottom: 3%;
   text-align: left;
 }
 
